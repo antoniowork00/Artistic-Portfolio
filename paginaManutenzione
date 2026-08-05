@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito in Costruzione</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 30px;
+        }
+        .countdown {
+            background-color: #eee;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #e8f4fc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <svg class="logo" width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <!-- Manico -->
+            <rect x="56" y="10" width="8" height="40" rx="4" fill="#b0b0b0"/>
+            <!-- Ghiera -->
+            <rect x="54" y="50" width="12" height="12" rx="6" fill="#c68642" stroke="#8d5524" stroke-width="2"/>
+            <!-- Setole -->
+            <ellipse cx="60" cy="62" rx="14" ry="10" fill="#f7ca99" stroke="#c68642" stroke-width="2"/>
+            <ellipse cx="60" cy="62" rx="10" ry="7" fill="#fff2d6" opacity="0.7"/>
+            <!-- Ombra -->
+            <ellipse cx="60" cy="100" rx="30" ry="8" fill="#e0e0e0" opacity="0.5"/>
+        </svg>
+        <h1>Il nostro sito è in costruzione</h1>
+        <p>Siamo al lavoro per portarvi un'esperienza web eccezionale. Torneremo presto online!</p>
+         
+        
+        <div class="social-links">
+            <p>Seguici sui social per aggiornamenti:</p>
+                <a href="https://instagram.com/tuoprofihttps://www.instagram.com/leo_napoletano_64?igsh=MWV1ZHF5dXNoczRwNw==lo"><i class="fab fa-instagram"></i>instagram</a>
+                | <a href="https://www.facebook.com/profile.php?id=100005005127205"><i class="fab fa-facebook-f"></i>facebook</a>
+                | <a href="mailto:leoart1964@gmail.com"><i class="fas fa-envelope"></i>email</a>
+                | <a href="tel:+3387277522"><i class="fas fa-phone"></i>telefono</a>
+        </div>
+        
+    </div>
+</body>
+</html>
