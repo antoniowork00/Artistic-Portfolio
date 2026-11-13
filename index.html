@@ -1,649 +1,930 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Leo Art 1964 - Portfolio Artistico</title>
-  <meta name="google-site-verification" content="qD9XgzWNRD3ras5rsbyzVXQhcx7U9jv8cLmeSLQO9Wk" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text:wght@400;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --primary-color: #8B5A2B;
-      --accent-color: #C19A6B;
-      --text-color: #4A3C2A;
-      --light-bg: #F9F5F0;
-      --dark-bg: #3E2723;
-      --transition: all 0.3s ease;
-      --shadow: 0 5px 15px rgba(97, 42, 42, 0.1);
-    }
-    
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    body {
-      font-family: 'Crimson Text', serif;
-      color: var(--text-color);
-      line-height: 1.6;
-      background-color: var(--light-bg);
-      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23c19a6b' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
-    }
-    
-    h1, h2, h3, h4 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      color: var(--dark-bg);
-    }
-    
-    .navbar {
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1543857778-c4a1a569e5bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1210&q=80');
-      background-size: cover;
-      background-position: center;
-      height: 100vh;
-      min-height: 600px;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      box-shadow: var(--shadow);
-    }
-    
-    .nav-container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 2;
-    }
-    
-    .logo {
-      font-size: 28px;
-      font-weight: 700;
-      color: white;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      font-family: 'Playfair Display', serif;
-    }
-    
-    .logo i {
-      margin-right: 10px;
-      color: var(--accent-color);
-    }
-    
-    .nav-links {
-      display: flex;
-      gap: 30px;
-    }
-    
-    .nav-links a {
-      color: white;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 18px;
-      transition: var(--transition);
-      position: relative;
-      font-family: 'Montserrat', sans-serif;
-    }
-    
-    .nav-links a:hover {
-      color: var(--accent-color);
-    }
-    
-    .nav-links a:after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background-color: var(--accent-color);
-      transition: var(--transition);
-    }
-    
-    .nav-links a:hover:after {
-      width: 100%;
-    }
-    
-    .navbar-content {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      padding: 40px 20px;
-      z-index: 2;
-    }
-    
-    .navbar-title {
-      font-size: 4rem;
-      color: white;
-      margin-bottom: 15px;
-      font-weight: 700;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    }
-    
-    .navbar-subtitle {
-      font-size: 1.5rem;
-      color: rgba(255, 255, 255, 0.9);
-      max-width: 600px;
-      margin-bottom: 30px;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-      font-style: italic;
-    }
-    
-    .btn {
-      display: inline-block;
-      padding: 14px 30px;
-      background-color: var(--accent-color);
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: 600;
-      transition: var(--transition);
-      border: 2px solid var(--accent-color);
-      font-size: 1.1rem;
-      font-family: 'Montserrat', sans-serif;
-    }
-    
-    .btn:hover {
-      background-color: transparent;
-      color: var(--accent-color);
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-    
-    .btn i {
-      margin-left: 8px;
-    }
-    
-    /* Biografia */
-    .container {
-      max-width: 1200px;
-      margin: 80px auto;
-      padding: 0 20px;
-    }
-    
-    .biografia {
-      display: flex;
-      background: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-      border-left: 5px solid var(--primary-color);
-    }
-    
-    .biografia:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-    }
-    
-    .image-container {
-      flex: 1;
-      overflow: hidden;
-      position: relative;
-    }
-    
-    .image-container:before {
-      content: '';
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      right: 10px;
-      bottom: 10px;
-      border: 2px solid var(--accent-color);
-      z-index: 1;
-      pointer-events: none;
-    }
-    
-    .biografia-img {
-      width: 100%;
-      height: 100%;
-      object-fit: fit-cover;
-      transition: var(--transition);
-    }
-    
-    .biografia:hover .biografia-img {
-      transform: scale(1.05);
-    }
-    
-    .content {
-      flex: 1;
-      padding: 40px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      position: relative;
-    }
-    
-    .content:before {
-      content: '"';
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      font-size: 6rem;
-      color: var(--accent-color);
-      opacity: 0.2;
-      font-family: 'Playfair Display', serif;
-    }
-    
-    .content h3 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-      color: var(--primary-color);
-      position: relative;
-      padding-left: 20px;
-    }
-    
-    .content h3:after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 20px;
-      width: 60px;
-      height: 3px;
-      background-color: var(--accent-color);
-    }
-    
-    .content p {
-      margin-bottom: 15px;
-      font-size: 1.2rem;
-      line-height: 1.8;
-      padding-left: 20px;
-    }
-    
-    /* Progetti */
-    .progetti {
-      margin: 100px auto;
-      max-width: 1200px;
-      padding: 0 20px;
-      text-align: center;
-    }
-    
-    .progetti h3 {
-      font-size: 2.5rem;
-      margin-bottom: 50px;
-      color: var(--primary-color);
-      position: relative;
-      display: inline-block;
-      padding-bottom: 15px;
-    }
-    
-    .progetti h3:after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 3px;
-      background-color: var(--accent-color);
-    }
-    
-    .galleria {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 30px;
-      margin-bottom: 50px;
-    }
-    
-    .card {
-      background: white;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-      transition: var(--transition);
-      position: relative;
-    }
-    
-    .card:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border: 1px solid var(--accent-color);
-      border-radius: 10px;
-      opacity: 0;
-      transition: var(--transition);
-      pointer-events: none;
-    }
-    
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-    }
-    
-    .card:hover:before {
-      opacity: 1;
-      top: 10px;
-      left: 10px;
-      right: 10px;
-      bottom: 10px;
-    }
-    
-    .card img {
-      width: 100%;
-      height: 250px;
-      object-fit: cover;
-      transition: var(--transition);
-    }
-    
-    .card:hover img {
-      transform: scale(1.05);
-    }
-    
-    .card-content {
-      padding: 20px;
-    }
-    
-    .card h4 {
-      font-size: 1.5rem;
-      margin: 0 0 10px;
-      color: var(--primary-color);
-    }
-    
-    .card h5 {
-      font-size: 1rem;
-      color: #777;
-      margin-bottom: 0;
-      font-weight: 400;
-      font-style: italic;
-    }
-    
-    .altro-link {
-      display: inline-block;
-      font-size: 1.2rem;
-      color: var(--primary-color);
-      text-decoration: none;
-      font-weight: 600;
-      transition: var(--transition);
-      position: relative;
-      padding: 10px 20px;
-      border: 2px solid var(--primary-color);
-      border-radius: 30px;
-    }
-    
-    .altro-link:hover {
-      color: white;
-      background-color: var(--primary-color);
-      transform: translateY(-3px);
-      box-shadow: var(--shadow);
-    }
-    
-    /* Footer */
-    .custom-footer {
-      background: linear-gradient(135deg, var(--dark-bg) 0%, #5D4037 100%);
-      color: white;
-      padding: 60px 0 30px;
-      text-align: center;
-      margin-top: 100px;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .custom-footer:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: linear-gradient(90deg, var(--accent-color), var(--primary-color), var(--accent-color));
-    }
-    
-    .footer-content {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-      position: relative;
-      z-index: 1;
-    }
-    
-    .footer-content h3 {
-      font-size: 2rem;
-      margin-bottom: 30px;
-      position: relative;
-      display: inline-block;
-      color: white;
-    }
-    
-    .footer-content h3:after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 60px;
-      height: 2px;
-      background-color: var(--accent-color);
-    }
-    
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-      margin: 30px 0;
-      flex-wrap: wrap;
-    }
-    
-    .social-icons a {
-      color: white;
-      text-decoration: none;
-      transition: var(--transition);
-      padding: 12px 20px;
-      border-radius: 30px;
-      background: rgba(255, 255, 255, 0.1);
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-family: 'Montserrat', sans-serif;
-    }
-    
-    .social-icons a:hover {
-      color: var(--dark-bg);
-      background: white;
-      transform: translateY(-3px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    }
-    
-    .footer-content p {
-      margin: 20px 0;
-      font-size: 1rem;
-      opacity: 0.9;
-    }
-    
-    /* Decorazioni artistiche */
-    .brush-stroke {
-      position: absolute;
-      width: 150px;
-      height: 20px;
-      background-color: var(--accent-color);
-      opacity: 0.3;
-      border-radius: 50%;
-      z-index: 0;
-    }
-    
-    .brush-stroke-1 {
-      top: 20%;
-      left: 10%;
-      transform: rotate(30deg);
-    }
-    
-    .brush-stroke-2 {
-      bottom: 30%;
-      right: 15%;
-      transform: rotate(-15deg);
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 992px) {
-      .navbar-title {
-        font-size: 3rem;
-      }
-      
-      .biografia {
-        flex-direction: column;
-      }
-      
-      .image-container {
-        height: 400px;
-      }
-    }
-    
-    @media (max-width: 768px) {
-      .navbar {
-        height: 80vh;
-      }
-      
-      .navbar-title {
-        font-size: 2.5rem;
-      }
-      
-      .nav-links {
-        gap: 15px;
-      }
-      
-      .nav-links a {
-        font-size: 16px;
-      }
-      
-      .social-icons a {
-        padding: 10px 15px;
-        font-size: 0.9rem;
-      }
-      
-      .content:before {
-        font-size: 4rem;
-      }
-    }
-    
-    @media (max-width: 576px) {
-      .nav-container {
-        flex-direction: column;
-        gap: 15px;
-      }
-      
-      .navbar-title {
-        font-size: 2rem;
-      }
-      
-      .navbar-subtitle {
-        font-size: 1.2rem;
-      }
-      
-      .content {
-        padding: 25px;
-      }
-      
-      .social-icons {
-        gap: 10px;
-      }
-      
-      .social-icons a {
-        padding: 8px 12px;
-        font-size: 0.8rem;
-      }
-      
-      .brush-stroke {
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Leo Art 1964 - Portfolio Artistico</title>
+    <meta
+      name="google-site-verification"
+      content="qD9XgzWNRD3ras5rsbyzVXQhcx7U9jv8cLmeSLQO9Wk"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Crimson+Text:wght@400;600&family=Montserrat:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="containerNOT404" style="display: none">
+      <style>
+        :root {
+          --primary-color: #8b5a2b;
+          --accent-color: #c19a6b;
+          --text-color: #4a3c2a;
+          --light-bg: #f9f5f0;
+          --dark-bg: #3e2723;
+          --transition: all 0.3s ease;
+          --shadow: 0 5px 15px rgba(97, 42, 42, 0.1);
+        }
+
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+
+        html {
+          scroll-behavior: smooth;
+        }
+
+        body {
+          font-family: "Crimson Text", serif;
+          color: var(--text-color);
+          line-height: 1.6;
+          background-color: var(--light-bg);
+          background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23c19a6b' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+          font-family: "Playfair Display", serif;
+          font-weight: 700;
+          color: var(--dark-bg);
+        }
+
+        .navbar {
+          background:
+            linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)),
+            url("https://images.unsplash.com/photo-1543857778-c4a1a569e5bd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1210&q=80");
+          background-size: cover;
+          background-position: center;
+          height: 100vh;
+          min-height: 600px;
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          box-shadow: var(--shadow);
+        }
+
+        .nav-container {
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          z-index: 2;
+        }
+
+        .logo {
+          font-size: 28px;
+          font-weight: 700;
+          color: white;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          font-family: "Playfair Display", serif;
+        }
+
+        .logo i {
+          margin-right: 10px;
+          color: var(--accent-color);
+        }
+
+        .nav-links {
+          display: flex;
+          gap: 30px;
+        }
+
+        .nav-links a {
+          color: white;
+          text-decoration: none;
+          font-weight: 500;
+          font-size: 18px;
+          transition: var(--transition);
+          position: relative;
+          font-family: "Montserrat", sans-serif;
+        }
+
+        .nav-links a:hover {
+          color: var(--accent-color);
+        }
+
+        .nav-links a:after {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background-color: var(--accent-color);
+          transition: var(--transition);
+        }
+
+        .nav-links a:hover:after {
+          width: 100%;
+        }
+
+        .navbar-content {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding: 40px 20px;
+          z-index: 2;
+        }
+
+        .navbar-title {
+          font-size: 4rem;
+          color: white;
+          margin-bottom: 15px;
+          font-weight: 700;
+          text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+        }
+
+        .navbar-subtitle {
+          font-size: 1.5rem;
+          color: rgba(255, 255, 255, 0.9);
+          max-width: 600px;
+          margin-bottom: 30px;
+          text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+          font-style: italic;
+        }
+
+        .btn {
+          display: inline-block;
+          padding: 14px 30px;
+          background-color: var(--accent-color);
+          color: white;
+          text-decoration: none;
+          border-radius: 30px;
+          font-weight: 600;
+          transition: var(--transition);
+          border: 2px solid var(--accent-color);
+          font-size: 1.1rem;
+          font-family: "Montserrat", sans-serif;
+        }
+
+        .btn:hover {
+          background-color: transparent;
+          color: var(--accent-color);
+          transform: translateY(-3px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn i {
+          margin-left: 8px;
+        }
+
+        /* Biografia */
+        .container {
+          max-width: 1200px;
+          margin: 80px auto;
+          padding: 0 20px;
+        }
+
+        .biografia {
+          display: flex;
+          background: white;
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: var(--shadow);
+          transition: var(--transition);
+          border-left: 5px solid var(--primary-color);
+        }
+
+        .biografia:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-container {
+          flex: 1;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .image-container:before {
+          content: "";
+          position: absolute;
+          top: 10px;
+          left: 10px;
+          right: 10px;
+          bottom: 10px;
+          border: 2px solid var(--accent-color);
+          z-index: 1;
+          pointer-events: none;
+        }
+
+        .biografia-img {
+          width: 100%;
+          height: 100%;
+          object-fit: fit-cover;
+          transition: var(--transition);
+        }
+
+        .biografia:hover .biografia-img {
+          transform: scale(1.05);
+        }
+
+        .content {
+          flex: 1;
+          padding: 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          position: relative;
+        }
+
+        .content:before {
+          content: '"';
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          font-size: 6rem;
+          color: var(--accent-color);
+          opacity: 0.2;
+          font-family: "Playfair Display", serif;
+        }
+
+        .content h3 {
+          font-size: 2rem;
+          margin-bottom: 20px;
+          color: var(--primary-color);
+          position: relative;
+          padding-left: 20px;
+        }
+
+        .content h3:after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 20px;
+          width: 60px;
+          height: 3px;
+          background-color: var(--accent-color);
+        }
+
+        .content p {
+          margin-bottom: 15px;
+          font-size: 1.2rem;
+          line-height: 1.8;
+          padding-left: 20px;
+        }
+
+        /* Progetti */
+        .progetti {
+          margin: 100px auto;
+          max-width: 1200px;
+          padding: 0 20px;
+          text-align: center;
+        }
+
+        .progetti h3 {
+          font-size: 2.5rem;
+          margin-bottom: 50px;
+          color: var(--primary-color);
+          position: relative;
+          display: inline-block;
+          padding-bottom: 15px;
+        }
+
+        .progetti h3:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 80px;
+          height: 3px;
+          background-color: var(--accent-color);
+        }
+
+        .galleria {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 30px;
+          margin-bottom: 50px;
+        }
+
+        .card {
+          background: white;
+          border-radius: 10px;
+          overflow: hidden;
+          box-shadow: var(--shadow);
+          transition: var(--transition);
+          position: relative;
+        }
+
+        .card:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border: 1px solid var(--accent-color);
+          border-radius: 10px;
+          opacity: 0;
+          transition: var(--transition);
+          pointer-events: none;
+        }
+
+        .card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .card:hover:before {
+          opacity: 1;
+          top: 10px;
+          left: 10px;
+          right: 10px;
+          bottom: 10px;
+        }
+
+        .card img {
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          transition: var(--transition);
+        }
+
+        .card:hover img {
+          transform: scale(1.05);
+        }
+
+        .card-content {
+          padding: 20px;
+        }
+
+        .card h4 {
+          font-size: 1.5rem;
+          margin: 0 0 10px;
+          color: var(--primary-color);
+        }
+
+        .card h5 {
+          font-size: 1rem;
+          color: #777;
+          margin-bottom: 0;
+          font-weight: 400;
+          font-style: italic;
+        }
+
+        .altro-link {
+          display: inline-block;
+          font-size: 1.2rem;
+          color: var(--primary-color);
+          text-decoration: none;
+          font-weight: 600;
+          transition: var(--transition);
+          position: relative;
+          padding: 10px 20px;
+          border: 2px solid var(--primary-color);
+          border-radius: 30px;
+        }
+
+        .altro-link:hover {
+          color: white;
+          background-color: var(--primary-color);
+          transform: translateY(-3px);
+          box-shadow: var(--shadow);
+        }
+
+        /* Footer */
+        .custom-footer {
+          background: linear-gradient(135deg, var(--dark-bg) 0%, #5d4037 100%);
+          color: white;
+          padding: 60px 0 30px;
+          text-align: center;
+          margin-top: 100px;
+          position: relative;
+          overflow: hidden;
+        }
+
+        .custom-footer:before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          height: 3px;
+          background: linear-gradient(
+            90deg,
+            var(--accent-color),
+            var(--primary-color),
+            var(--accent-color)
+          );
+        }
+
+        .footer-content {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+          position: relative;
+          z-index: 1;
+        }
+
+        .footer-content h3 {
+          font-size: 2rem;
+          margin-bottom: 30px;
+          position: relative;
+          display: inline-block;
+          color: white;
+        }
+
+        .footer-content h3:after {
+          content: "";
+          position: absolute;
+          bottom: -10px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 60px;
+          height: 2px;
+          background-color: var(--accent-color);
+        }
+
+        .social-icons {
+          display: flex;
+          justify-content: center;
+          gap: 15px;
+          margin: 30px 0;
+          flex-wrap: wrap;
+        }
+
+        .social-icons a {
+          color: white;
+          text-decoration: none;
+          transition: var(--transition);
+          padding: 12px 20px;
+          border-radius: 30px;
+          background: rgba(255, 255, 255, 0.1);
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-family: "Montserrat", sans-serif;
+        }
+
+        .social-icons a:hover {
+          color: var(--dark-bg);
+          background: white;
+          transform: translateY(-3px);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer-content p {
+          margin: 20px 0;
+          font-size: 1rem;
+          opacity: 0.9;
+        }
+
+        /* Decorazioni artistiche */
+        .brush-stroke {
+          position: absolute;
+          width: 150px;
+          height: 20px;
+          background-color: var(--accent-color);
+          opacity: 0.3;
+          border-radius: 50%;
+          z-index: 0;
+        }
+
+        .brush-stroke-1 {
+          top: 20%;
+          left: 10%;
+          transform: rotate(30deg);
+        }
+
+        .brush-stroke-2 {
+          bottom: 30%;
+          right: 15%;
+          transform: rotate(-15deg);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+          .navbar-title {
+            font-size: 3rem;
+          }
+
+          .biografia {
+            flex-direction: column;
+          }
+
+          .image-container {
+            height: 400px;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .navbar {
+            height: 80vh;
+          }
+
+          .navbar-title {
+            font-size: 2.5rem;
+          }
+
+          .nav-links {
+            gap: 15px;
+          }
+
+          .nav-links a {
+            font-size: 16px;
+          }
+
+          .social-icons a {
+            padding: 10px 15px;
+            font-size: 0.9rem;
+          }
+
+          .content:before {
+            font-size: 4rem;
+          }
+        }
+
+        @media (max-width: 576px) {
+          .nav-container {
+            flex-direction: column;
+            gap: 15px;
+          }
+
+          .navbar-title {
+            font-size: 2rem;
+          }
+
+          .navbar-subtitle {
+            font-size: 1.2rem;
+          }
+
+          .content {
+            padding: 25px;
+          }
+
+          .social-icons {
+            gap: 10px;
+          }
+
+          .social-icons a {
+            padding: 8px 12px;
+            font-size: 0.8rem;
+          }
+
+          .brush-stroke {
+            display: none;
+          }
+        }
+      </style>
+      <nav class="navbar">
+        <div class="nav-container">
+          <a href="index.html" class="logo"
+            ><i class="fas fa-paint-brush"></i> Leo Art 1964</a
+          >
+          <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="progetti.html">Opere</a>
+            <a href="mostre.html">Mostre</a>
+          </div>
+        </div>
+        <div class="navbar-content">
+          <h1 class="navbar-title">La bellezza nell'arte</h1>
+          <p class="navbar-subtitle">
+            Dove emozione e creatività si incontrano
+          </p>
+          <a href="#biografia" class="btn">Scopri il mio mondo</a>
+        </div>
+      </nav>
+
+      <div class="container" id="biografia">
+        <section class="biografia">
+          <div class="image-container">
+            <img
+              src="/immaginizioleo/fotoleo.jpg"
+              alt="Leo Napoletano"
+              class="biografia-img"
+            />
+          </div>
+          <div class="content">
+            <h3>La mia storia</h3>
+            <p>
+              Ciao, sono Leo. La mia vita è un viaggio attraverso colori,
+              texture ed emozioni. Da sempre, sento il bisogno di esprimere ciò
+              che le parole non possono descrivere, trasformando le sensazioni
+              in opere d'arte.
+            </p>
+            <p>
+              Dopo gli studi all'Accademia di Belle Arti, ho sviluppato uno
+              stile unico che fonde tecniche tradizionali usando colori vibranti
+              e texture. Le mie opere sono state esposte in diverse gallerie, ma
+              la vera soddisfazione è vedere come riescono a toccare l'anima di
+              chi le osserva.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <section class="progetti">
+        <h3>Le mie creazioni</h3>
+        <div class="galleria">
+          <div class="card">
+            <img src="immaginizioleo/p1.jpg" alt="Progetto 1" />
+            <div class="card-content">
+              <h4>Sensazioni</h4>
+              <h5>50x70 - Acrilico su Tela</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="immaginizioleo/p2.jpg" alt="Progetto 2" />
+            <div class="card-content">
+              <h4>Flora</h4>
+              <h5>50x70 - Acrilico su Tela</h5>
+            </div>
+          </div>
+          <div class="card">
+            <img src="immaginizioleo/p3.jpg" alt="Progetto 3" />
+            <div class="card-content">
+              <h4>Sguardi</h4>
+              <h5>40x50 - Acrilico su Tela</h5>
+            </div>
+          </div>
+        </div>
+        <a class="altro-link" href="progetti.html">Esplora tutte le opere</a>
+      </section>
+
+      <footer class="custom-footer">
+        <div class="brush-stroke brush-stroke-1"></div>
+        <div class="brush-stroke brush-stroke-2"></div>
+        <div class="footer-content">
+          <h3>Entriamo in contatto</h3>
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/leo_napoletano_64?igsh=MWV1ZHF5dXNoczRwNw=="
+              target="_blank"
+            >
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100005005127205"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+            <a href="https://leoart1964.myshopify.com/" target="_blank">
+              <i class="fab fa-shopify"></i> Negozio
+            </a>
+            <a href="mailto:leoart1964@gmail.com">
+              <i class="far fa-envelope"></i> Email
+            </a>
+            <a href="tel:+393387277522">
+              <i class="fas fa-phone"></i> Telefono
+            </a>
+          </div>
+          <p>&copy; 2025 | Leo Art 1964 - Tutti i diritti riservadosi</p>
+          <p>
+            Realizzato con <strong>AMORE & PASSIONE</strong> per l'arte <br />
+            by Antonio Napoletano
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <div id="container404page"
+      style="
         display: none;
+        background-image: url(/immaginizioleo/404bg.png);
+        justify-content: center;
+        align-items: center;
+        height: 100dvh;
+        flex-direction: column;
+      "
+    >
+      <div
+        id="style404"
+        style="display: flex; justify-content: center; align-items: center"
+      >
+        <h1 class="quattro" id="quattro1">4</h1>
+        <span id="span1"></span>
+        <h1 class="zero">0</h1>
+        <h1 class="quattro" id="quattro2">4</h1>
+        <span id="span2"></span>
+      </div>
+      <h3 id="descr">page not found , sorry ...</h3>
+      <button onclick="window.location.href = '/'">Riprova</button>
+      <style>
+        @font-face {
+          font-family: "Thi";
+          src: url("/fonts404/Thi.ttf") format("truetype");
+          font-display: swap;
+        }
+
+        @font-face {
+          font-family: "Xunga Variable";
+          src: url("/fonts404/xunga-variable-top.ttf") format("truetype");
+          font-display: swap;
+        }
+
+        :root {
+          --font-descr: "Thi", serif;
+          --font-titolo: "Xunga Variable", serif;
+
+          /*
+    --u = "1px del design originale" (desktop 1920x1080 ≈ 0.1vw).
+    Tutto il 404 (cifre, pallini, ombre, titolo) è espresso in multipli di --u,
+    quindi scala in blocco. Il valore è sempre limitato dall'altezza (vh),
+    così il 404 non esce mai dalla finestra, nemmeno in landscape su telefono.
+  */
+          --u: min(
+            0.19vw,
+            0.16vh
+          ); /* mobile: cifre più grandi rispetto alla larghezza */
+        }
+
+        @media (min-width: 768px) {
+          :root {
+            --u: min(0.14vw, 0.16vh); /* tablet */
+          }
+        }
+
+        @media (min-width: 1200px) {
+          :root {
+            --u: min(0.1vw, 0.16vh); /* desktop: identico a prima */
+          }
+        }
+
+        html,
+        body {
+          margin: 0;
+          overflow-x: hidden; /* evita scroll orizzontale da ombre/offset */
+        }
+
+        /* ----- Cifre 404 ----- */
+        .quattro,
+        .zero {
+          font-family: var(--font-titolo);
+          font-size: calc(320 * var(--u));
+          font-weight: 900;
+          color: #a27500;
+          letter-spacing: calc(-30 * var(--u));
+          text-shadow: calc(7 * var(--u)) calc(6 * var(--u)) calc(2 * var(--u))
+            rgba(0, 0, 0, 0.7);
+        }
+
+        #quattro1 {
+          font-size: calc(
+            240 * var(--u)
+          ); /* mantiene il rapporto 15rem / 20rem */
+        }
+
+        .zero {
+          color: black;
+        }
+
+        /* ----- Pallini bianchi: scalano insieme alle cifre ----- */
+        #style404 span {
+          position: relative;
+          color: white;
+          width: calc(20 * var(--u));
+          height: calc(20 * var(--u));
+          background-color: white;
+          border-radius: 100px;
+        }
+
+        #span1 {
+          left: calc(-30 * var(--u));
+          bottom: calc(85 * var(--u));
+        }
+
+        #span2 {
+          left: calc(-42 * var(--u));
+          bottom: calc(120 * var(--u));
+        }
+
+        /* ----- Titolo ----- */
+        #descr {
+          color: white;
+          text-transform: uppercase;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          padding-inline: 1rem; /* su mobile il testo può andare a capo senza toccare i bordi */
+          font-size: max(calc(37 * var(--u)), 1.1rem); /* mai illeggibile */
+          margin-top: calc(-150 * var(--u));
+          font-family: var(--font-descr);
+          font-weight: bolder;
+          text-shadow: calc(5 * var(--u)) calc(4 * var(--u)) calc(2 * var(--u))
+            rgba(0, 0, 0, 0.7);
+        }
+
+        /* ----- Bottone "Riprova" ----- */
+        button {
+          /* centrato: niente più left: 50px fisso, che su mobile lo spostava fuori asse */
+          position: relative;
+          display: block;
+          margin: calc(60 * var(--u)) auto 0;
+          font-family: var(--font-descr);
+          font-size: clamp(1.2rem, 1rem + 1vw, 2rem);
+          padding: 0.5em 1.5em;
+          background-color: #a27500; /* stesso oro del 404 */
+          color: white;
+          border: 3px solid #fff;
+          border-radius: 18px;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          box-shadow:
+            0 0 0 4px rgba(0, 0, 0, 0.55),
+            0 8px 20px rgba(0, 0, 0, 0.6),
+            0 0 18px 4px rgba(255, 200, 60, 0.55); /* alone dorato */
+          text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.7);
+          animation: pulseRiprova 2s ease-in-out infinite;
+          touch-action: manipulation;
+        }
+
+        /* hover solo dove esiste davvero (evita l'hover "appiccicato" su touch) */
+        @media (hover: hover) {
+          button:hover {
+            background-color: #c48f00;
+            transform: translateY(-3px) scale(1.06);
+            box-shadow:
+              0 0 0 4px rgba(0, 0, 0, 0.7),
+              0 12px 26px rgba(0, 0, 0, 0.7),
+              0 0 26px 8px rgba(255, 210, 80, 0.8);
+            animation: none;
+          }
+        }
+
+        button:active {
+          transform: scale(0.97);
+        }
+
+        button:focus-visible {
+          outline: 3px solid #fff;
+          outline-offset: 4px;
+        }
+
+        @keyframes pulseRiprova {
+          0%,
+          100% {
+            box-shadow:
+              0 0 0 4px rgba(0, 0, 0, 0.55),
+              0 8px 20px rgba(0, 0, 0, 0.6),
+              0 0 14px 2px rgba(255, 200, 60, 0.4);
+          }
+          50% {
+            box-shadow:
+              0 0 0 4px rgba(0, 0, 0, 0.55),
+              0 8px 20px rgba(0, 0, 0, 0.6),
+              0 0 26px 8px rgba(255, 200, 60, 0.8);
+          }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+          button {
+            animation: none;
+            transition: none;
+          }
+        }
+      </style>
+    </div>
+    <script>
+  const containerOK = document.getElementById("containerNOT404");
+  const container404 = document.getElementById("container404page");
+
+  fetch(window.location.href, { cache: "no-store" })
+    .then((response) => {
+
+      if (response.ok) {
+
+        containerOK.style.display = "block";
+        container404.style.display = "none";
+
+      } else {
+
+        containerOK.style.display = "none";
+        container404.style.display = "flex";
+
       }
-    }
-  </style>
-</head>
-<body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="index.html" class="logo"><i class="fas fa-paint-brush"></i> Leo Art 1964</a>
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="progetti.html">Opere</a>
-        <a href="mostre.html">Mostre</a>
-      </div>
-    </div>
-    <div class="navbar-content">
-      <h1 class="navbar-title">La bellezza nell'arte</h1>
-      <p class="navbar-subtitle">Dove emozione e creatività si incontrano</p>
-      <a href="#biografia" class="btn">Scopri il mio mondo</a>
-    </div>
-  </nav>
 
-  <div class="container" id="biografia">
-    <section class="biografia">
-      <div class="image-container">
-        <img src="fotoleo.jpg" alt="Leo Napoletano" class="biografia-img">
-      </div>
-      <div class="content">
-        <h3>La mia storia</h3>
-        <p>Ciao, sono Leo. La mia vita è un viaggio attraverso colori, texture ed emozioni. Da sempre, sento il bisogno di esprimere ciò che le parole non possono descrivere, trasformando le sensazioni in opere d'arte.</p>
-        <p>Dopo gli studi all'Accademia di Belle Arti, ho sviluppato uno stile unico che fonde tecniche tradizionali usando colori vibranti e texture. Le mie opere sono state esposte in diverse gallerie, ma la vera soddisfazione è vedere come riescono a toccare l'anima di chi le osserva.</p>
-      </div>
-    </section>
-  </div>
+    })
+    .catch((error) => {
 
-  <section class="progetti">
-    <h3>Le mie creazioni</h3>
-    <div class="galleria">
-      <div class="card">
-        <img src="immaginizioleo/p1.jpg" alt="Progetto 1">
-        <div class="card-content">
-          <h4>Sensazioni</h4>
-          <h5>50x70 - Acrilico su Tela</h5>
-        </div>
-      </div>
-      <div class="card">
-        <img src="immaginizioleo/p2.jpg" alt="Progetto 2">
-        <div class="card-content">
-          <h4>Flora</h4>
-          <h5>50x70 - Acrilico su Tela</h5>
-        </div>
-      </div>
-      <div class="card">
-        <img src="immaginizioleo/p3.jpg" alt="Progetto 3">
-        <div class="card-content">
-          <h4>Sguardi</h4>
-          <h5>40x50 - Acrilico su Tela</h5>
-        </div>
-      </div>
-    </div>
-    <a class="altro-link" href="progetti.html">Esplora tutte le opere</a>
-  </section>
+      containerOK.style.display = "none";
+      container404.style.display = "flex";
 
-  <footer class="custom-footer">
-    <div class="brush-stroke brush-stroke-1"></div>
-    <div class="brush-stroke brush-stroke-2"></div>
-    <div class="footer-content">
-      <h3>Entriamo in contatto</h3>
-      <div class="social-icons">
-        <a href="https://www.instagram.com/leo_napoletano_64?igsh=MWV1ZHF5dXNoczRwNw==" target="_blank">
-          <i class="fab fa-instagram"></i> Instagram
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100005005127205" target="_blank">
-          <i class="fab fa-facebook-f"></i> Facebook
-        </a>
-        <a href="https://leoart1964.myshopify.com/" target="_blank">
-          <i class="fab fa-shopify"></i> Negozio
-        </a>
-        <a href="mailto:leoart1964@gmail.com">
-          <i class="far fa-envelope"></i> Email
-        </a>
-        <a href="tel:+3387277522">
-          <i class="fas fa-phone"></i> Telefono
-        </a>
-      </div>
-      <p>&copy; 2025 | Leo Art 1964 - Tutti i diritti riservadosi</p>
-      <p>Realizzato con ❤️ da Antonio Napoletano</p>
-    </div>
-  </footer>
-</body>
+      console.error("Errore durante il controllo:", error);
+
+    });
+</script>
+  </body>
 </html>

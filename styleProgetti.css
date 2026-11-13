@@ -1,0 +1,291 @@
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;600&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fdf2f8;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+            padding: 40px 20px;
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #f9a8d4;
+        }
+        
+        h1 {
+            color: #be185d;
+            font-family: 'Playfair Display', serif;
+            font-size: 60px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            color: #db2777;
+            font-size: 18px;
+            font-style: italic;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+        
+        .painting-image {
+            flex: 1;
+            min-width: 300px;
+            position: relative;
+        }
+        
+        .painting-image img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .painting-image img:hover {
+            transform: scale(1.02);
+        }
+        
+        .art-badge {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #be185d;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
+        .painting-details {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .specs {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .specs p {
+            margin: 8px 0;
+            color: #701a75;
+            font-size: 16px;
+        }
+        
+        .specs i {
+            color: #be185d;
+            width: 25px;
+        }
+        
+        h2 {
+            color: #9d174d;
+            font-family: 'Playfair Display', serif;
+            font-size: 32px;
+            margin: 20px 0;
+        }
+        
+        .description {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .description p {
+            margin-bottom: 15px;
+        }
+        
+        .features {
+            list-style: none;
+            margin-top: 20px;
+        }
+        
+        .features li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .features i {
+            color: #be185d;
+            margin-right: 10px;
+        }
+        
+        .pricing {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .price {
+            font-size: 42px;
+            color: #be185d;
+            font-weight: 700;
+        }
+        
+        .installments {
+            color: #701a75;
+            font-size: 16px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 15px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
+        
+        button, .shopify-button {
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(to right, #db2777, #be185d);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(to right, #be185d, #9d174d);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(190, 24, 93, 0.3);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #be185d;
+            border: 2px solid #be185d;
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(190, 24, 93, 0.1);
+        }
+        
+        .social-proof {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        
+        .stars {
+            color: #f59e0b;
+            margin-bottom: 5px;
+        }
+        
+        .bought {
+            color: #4b5563;
+            font-size: 14px;
+        }
+        
+        .benefits {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        
+        .benefits h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .benefits-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+        
+        .benefit {
+            flex: 1;
+            min-width: 250px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit:hover {
+            transform: translateY(-5px);
+        }
+        
+        .benefit i {
+            font-size: 40px;
+            color: #be185d;
+            margin-bottom: 15px;
+        }
+        
+        .benefit h3 {
+            color: #9d174d;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+            background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%);
+            color: #701a75;
+            border-top: 1px solid #f9a8d4;
+        }
+        
+        footer a {
+            color: #be185d;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+            }
+            
+            .container {
+                flex-direction: column;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+            }
+        }
