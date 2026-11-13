@@ -1,4 +1,4 @@
-# 🎨 Leo Art 1964 — Portfolio Artistico
+#  Leo Art 1964 — Portfolio Artistico
 #### Sorry for the inconvenience, but some images may not load correctly on GitHub Pages due to an issue with the image files.
 #### The website works correctly on Netlify, so please visit the Netlify version for the complete experience.
 
@@ -20,18 +20,18 @@ Il sito nasce con l'obiettivo di offrire ai visitatori, collezionisti e appassio
 
 ---
 
-## ✨ Caratteristiche Principali
+##  Caratteristiche Principali
 
-- 📱 **Design Fully Responsive:** Adattabile a qualsiasi dispositivo (Desktop, Tablet, Smartphone).
-- 🖼️ **Galleria Opere interattiva:** Catalogo visivo per esplorare le collezioni e i quadri dell'artista con schede descrittive (tecnica, dimensioni, titolo).
-- 🏛️ **Sezione Mostre:** Spazio dedicato agli eventi, alle esposizioni d'arte passate e a quelle in programma.
-- 👤 **Profilo Biografico:** Narrativa d'impatto sulla formazione (Accademia di Belle Arti) e sulla poetica artistica di Leo Napoletano.
-- 📬 **Contatti Diretti & Social Integration:** Link rapidi verso Instagram, Facebook, il Negozio online, oltre ai canali diretti di email e telefono.
-- 🚀 **Performance elevate & SEO-friendly:** Caricamento ultrarapido grazie alla struttura snella e all'hosting su rete CDN Netlify.
+-  **Design Fully Responsive:** Adattabile a qualsiasi dispositivo (Desktop, Tablet, Smartphone).
+-  **Galleria Opere interattiva:** Catalogo visivo per esplorare le collezioni e i quadri dell'artista con schede descrittive (tecnica, dimensioni, titolo).
+-  **Sezione Mostre:** Spazio dedicato agli eventi, alle esposizioni d'arte passate e a quelle in programma.
+-  **Profilo Biografico:** Narrativa d'impatto sulla formazione (Accademia di Belle Arti) e sulla poetica artistica di Leo Napoletano.
+-  **Contatti Diretti & Social Integration:** Link rapidi verso Instagram, Facebook, il Negozio online, oltre ai canali diretti di email e telefono.
+-  **Performance elevate & SEO-friendly:** Caricamento ultrarapido grazie alla struttura snella e all'hosting su rete CDN Netlify.
 
 ---
 
-## 🎨 Informazioni sull'Artista
+##  Informazioni sull'Artista
 
 > *"La mia vita è un viaggio attraverso colori, texture ed emozioni. Da sempre, sento il bisogno di esprimere ciò che le parole non possono descrivere, trasformando le sensazioni in opere d'arte."*  
 > — **Leo Napoletano**
@@ -40,7 +40,7 @@ Dopo aver completato gli studi presso l'**Accademia di Belle Arti**, Leo ha svil
 
 ---
 
-## 🖥️ Sezioni del Sito Web
+##  Sezioni del Sito Web
 
 1. **Header & Navigation Bar:** Menu intuitivo per passare facilmente tra le sezioni principali (`Home`, `Opere`, `Mostre`).
 2. **Hero Section:** Titolo principale (*"La bellezza nell'arte - Dove emozione e creatività si incontrano"*) con bottone Call-To-Action ("Scopri il mio mondo").
@@ -50,7 +50,7 @@ Dopo aver completato gli studi presso l'**Accademia di Belle Arti**, Leo ha svil
 
 ---
 
-## 🖼️ Opere in Evidenza
+## Opere in Evidenza
 
 | Opera | Dimensioni | Tecnica | Descrizione / Stile |
 | :--- | :---: | :---: | :--- |
@@ -60,7 +60,7 @@ Dopo aver completato gli studi presso l'**Accademia di Belle Arti**, Leo ha svil
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 - **Styling:** CSS Grid, Flexbox, Custom CSS Variables
