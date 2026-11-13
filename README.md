@@ -27,7 +27,8 @@ Il sito nasce con l'obiettivo di offrire ai visitatori, collezionisti e appassio
 -  **Sezione Mostre:** Spazio dedicato agli eventi, alle esposizioni d'arte passate e a quelle in programma.
 -  **Profilo Biografico:** Narrativa d'impatto sulla formazione (Accademia di Belle Arti) e sulla poetica artistica di Leo Napoletano.
 -  **Contatti Diretti & Social Integration:** Link rapidi verso Instagram, Facebook, il Negozio online, oltre ai canali diretti di email e telefono.
--  **Performance elevate & SEO-friendly:** Caricamento ultrarapido grazie alla struttura snella e all'hosting su rete CDN Netlify.
+-  **Performance elevate & SEO-friendly:** Caricamento ultrarapido grazie alla struttura snella e all'hosting su rete CDN Netlify e GitHub.
+- **Pagina 404 personalizzata**: Schermata di errore dedicata con pulsante di azione rapida per gestire le pagine non trovate e migliorare l'esperienza utente.
 
 ---
 
