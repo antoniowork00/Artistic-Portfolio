@@ -7,7 +7,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 ![License](https://img.shields.io/badge/License-Copyright_©_2025-blue.svg)
 
-> **Sito Ufficiale Live:** [leoart1964-1964.netlify.app](https://leoart1964-1964.netlify.app/)
+> **Sito Ufficiale Live:** [leoart1964-1964.github.com](https://antoniowork00.github.io/Artistic-Portfolio/)
 
 
 ---
