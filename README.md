@@ -64,6 +64,6 @@ Dopo aver completato gli studi presso l'**Accademia di Belle Arti**, Leo ha svil
 
 - **Frontend:** HTML5, CSS3, JavaScript (ES6+)
 - **Styling:** CSS Grid, Flexbox, Custom CSS Variables
-- **Hosting & Deployment:** Netlify
+- **Hosting & Deployment:** Netlify & GitHub
 - **Version Control:** Git & GitHub
 
